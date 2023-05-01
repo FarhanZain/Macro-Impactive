@@ -9,9 +9,11 @@ export default function Navbar() {
     <>
       <nav className="bg-primary border-gray-200 dark:bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="#" className="flex items-center">
-            <img src={logo} className="h-12" alt="Impactive Logo" />
-          </a>
+          <Link to={"/"}>
+            <a href="#" className="flex items-center">
+              <img src={logo} className="h-12" alt="Impactive Logo" />
+            </a>
+          </Link>
           <div className="flex items-center md:order-2 items-center">
             <a
               className="text-white text-base font-medium font-poppins hover:border-b-2 border-secondary"
@@ -93,7 +95,7 @@ export default function Navbar() {
             id="navbar-cta"
           >
             <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-primary rounded-lg bg-primary md:flex-row md:space-x-2 md:mt-0 md:border-0 md:bg-primary">
-              <Link to="/about">
+              <Link to="/AksiTanggap">
                 <a
                   className="font-poppins text-base font-medium block py-2 pl-3 pr-4 text-white rounded hover:bg-primary-hover md:hover:bg-primary-hover md:p-2"
                   aria-current="page"

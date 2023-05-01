@@ -1,10 +1,14 @@
+import { Link } from "react-router-dom";
+
 export default function CardAksi(props) {
   return (
     <>
-      <div className="w-72 bg-white border border-gray-200 rounded-lg shadow ">
-        <a href="#">
-          <img className="rounded-t-lg w-full" src={props.image} alt="" />
-        </a>
+      <div className="w-72 bg-white border border-gray-200 rounded-lg shadow-md ">
+        <Link to={props.link}>
+          <a href="#">
+            <img className="rounded-t-lg w-full" src={props.image} alt="" />
+          </a>
+        </Link>
         {/* tag */}
         <div className="flex justify-between items-center p-2">
           {props.tag1AksiReg}
@@ -23,11 +27,13 @@ export default function CardAksi(props) {
         </div>
         {/* content */}
         <div className="px-2">
-          <a href="#">
-            <h5 className="mb-2 text-2xl font-bold font-Libre tracking-tight text-black">
-              {props.judulCard}
-            </h5>
-          </a>
+          <Link to={props.link}>
+            <a href="#">
+              <h5 className="mb-2 text-2xl font-bold font-Libre tracking-tight text-black">
+                {props.judulCard}
+              </h5>
+            </a>
+          </Link>
           <p className="mb-3 font-normal font-Libre text-base text-gray-700 ">
             {props.subCard}
           </p>
