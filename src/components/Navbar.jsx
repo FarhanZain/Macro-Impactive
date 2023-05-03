@@ -15,19 +15,17 @@ export default function Navbar() {
             </a>
           </Link>
           <div className="flex items-center md:order-2 items-center">
-            <a
-              className="text-white text-base font-medium font-poppins hover:border-b-2 border-secondary"
-              href="#"
-            >
-              Login
-            </a>
+            <Link to={"/Dashboard"}>
+              <a className="text-white text-base font-medium font-poppins hover:border-b-2 border-secondary">
+                Login
+              </a>
+            </Link>
             <span className="font-extrabold text-secondary mx-3">|</span>
-            <a
-              className="text-white text-base font-medium font-poppins hover:border-b-2 border-secondary"
-              href="#"
-            >
-              Buat Akun
-            </a>
+            <Link to={""}>
+              <a className="text-white text-base font-medium font-poppins hover:border-b-2 border-secondary">
+                Buat Akun
+              </a>
+            </Link>
             <a className="text-white ml-2" href="#">
               <svg
                 width="30"

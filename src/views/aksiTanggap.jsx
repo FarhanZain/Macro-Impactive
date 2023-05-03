@@ -40,7 +40,7 @@ export default function AksiTanggap() {
             subCard="Palang Merah Indonesia"
             teksTanggal="10 Maret 2023"
             teksLokasi="Kabupaten Cianjur, Jawa Barat"
-            link="#"
+            link="/Aksi-Tanggap-Detail"
           />
           <CardAksi
             image={cardAksi2}

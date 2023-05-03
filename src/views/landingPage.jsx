@@ -164,7 +164,7 @@ export default function LandingPage() {
             </div>
 
             {/* <!-- Carousel wrapper --> */}
-            <div className="">
+            <div>
               <div className="flex justify-between">
                 <CardAksi
                   image={cardAksi1}
@@ -174,6 +174,7 @@ export default function LandingPage() {
                   subCard="Palang Merah Indonesia"
                   teksTanggal="10 Maret 2023"
                   teksLokasi="Kabupaten Cianjur, Jawa Barat"
+                  link="#"
                 />
                 <CardAksi
                   image={cardAksi2}
@@ -183,6 +184,7 @@ export default function LandingPage() {
                   subCard="BNPB"
                   teksTanggal="12 - 17 Maret 2023"
                   teksLokasi="Lahat, Sumatera Barat"
+                  link="#"
                 />
                 <CardAksi
                   image={cardAksi3}
@@ -192,6 +194,7 @@ export default function LandingPage() {
                   subCard="MDMC"
                   teksTanggal="19 Maret 2023"
                   teksLokasi="Pangandaran, Jawa Barat"
+                  link="#"
                 />
               </div>
             </div>
