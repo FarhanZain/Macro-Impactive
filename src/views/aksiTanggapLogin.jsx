@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import NavbarLogin from "../components/NavbarLogin";
 import ButtonSecondary from "../components/buttonSecondary";
 import CardAksi from "../components/cardAksi";
 import Footer from "../components/footer";
@@ -9,10 +10,10 @@ import cardAksi1 from "../img/cardAksi1.png";
 import cardAksi2 from "../img/cardAksi2.png";
 import cardAksi3 from "../img/cardAksi3.png";
 
-export default function AksiTanggap() {
+export default function AksiTanggapLogin() {
   return (
     <>
-      <Navbar />
+      <NavbarLogin />
 
       {/* Card List Aksi Tanggap */}
       <section className="max-w-screen-xl mx-auto px-4 pt-10">
@@ -40,7 +41,7 @@ export default function AksiTanggap() {
             subCard="Palang Merah Indonesia"
             teksTanggal="10 Maret 2023"
             teksLokasi="Kabupaten Cianjur, Jawa Barat"
-            link="/Aksi-Tanggap-Detail"
+            link="/Aksi-Tanggap-Detail-Login"
           />
           <CardAksi
             image={cardAksi2}

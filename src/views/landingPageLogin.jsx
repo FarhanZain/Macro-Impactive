@@ -15,11 +15,12 @@ import CardArtikelLandingPage from "../components/cardArtikelLandingPage";
 import Artikel1 from "../img/Artikel1.png";
 import Artikel2 from "../img/Artikel2.png";
 import Footer from "../components/footer";
+import NavbarLogin from "../components/NavbarLogin";
 
-export default function LandingPage() {
+export default function LandingPageLogin() {
   return (
     <>
-      <Navbar />
+      <NavbarLogin />
 
       {/* Hero */}
       <section className="bg-cover bg-no-repeat bg-[url('./img/bg-img.png')] bg-gray-700 bg-blend-multiply">
@@ -212,10 +213,7 @@ export default function LandingPage() {
         </div>
         <div className="flex justify-center py-24">
           <div className="px-8">
-            <ButtonSecondary
-              TextButton={"Gabung Sebagai Relawan"}
-              link={"/AksiTanggap"}
-            />
+            <ButtonSecondary TextButton={"Gabung Sebagai Relawan"} />
           </div>
           <div className="px-8">
             <ButtonPrimary TextButton="Gabung Sebagai Organisasi" />

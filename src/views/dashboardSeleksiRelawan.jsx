@@ -3,8 +3,10 @@ import NavbarLogin from "../components/NavbarLogin";
 import ButtonSecondary from "../components/buttonSecondary";
 import Footer from "../components/footer";
 import Sidebar from "../components/sidebar";
+import imgAksi from "../img/cardAksi1.png";
+import { Link } from "react-router-dom";
 
-export default function DasboardPage() {
+export default function DasboardSeleksiRelawan() {
   return (
     <>
       <div className="fixed w-full z-50">
@@ -34,7 +36,7 @@ export default function DasboardPage() {
                     </p>
                   </div>
                   <div className="flex items-center">
-                    <p className="px-4 font-Libre text-base font-semibold">
+                    <p className="pr-7 font-Libre text-base font-semibold">
                       Status
                     </p>
                     <span className="text-gray-400 font-bold font-Libre text-base">
@@ -42,15 +44,58 @@ export default function DasboardPage() {
                     </span>
                   </div>
                 </div>
-                <div className="text-center">
-                  <p className="mb-8 mt-14 font-semibold font-Libre text-base text-gray-500">
-                    Belum mendaftar ke dalam Aksi Tanggap
-                  </p>
-                  <div className="flex justify-center">
-                    <ButtonSecondary
-                      TextButton="Gabung Aksi Tanggap"
-                      link="/Aksi-Tanggap-Login"
-                    />
+                <div className="h-[250px] flex items-center">
+                  <div className="flex">
+                    <Link>
+                      <div className="pl-4 w-full h-full flex items-center border-r-2 border-gray-500 cursor-pointer">
+                        <div className="w-full mr-3">
+                          <img src={imgAksi} alt="" />
+                        </div>
+                        <div>
+                          <h1 className="font-poppins text-xl font-bold">
+                            Salurkan Bantuan Untuk Korban Gempa Bumi Cianjur
+                          </h1>
+                          <div className="flex items-center py-1">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-clock text-gray-400"
+                              viewBox="0 0 16 16"
+                            >
+                              {" "}
+                              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />{" "}
+                              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />{" "}
+                            </svg>
+                            <p className="ml-1 font-Libre text-base text-gray-400">
+                              10 Maret 2023
+                            </p>
+                          </div>
+                          <div className="flex items-center py-1">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-geo-alt-fill text-gray-400"
+                              viewBox="0 0 16 16"
+                            >
+                              {" "}
+                              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />{" "}
+                            </svg>
+                            <p className="ml-1 font-Libre text-base text-gray-400">
+                              Kabupaten Cianjur, Jawa Barat
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                    <div className="flex justify-center items-center mx-4">
+                      <p className="px-4 py-2 border-2 rounded-lg border-secondary text-secondary font-Libre font-normal text-base">
+                        Diverifikasi
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
