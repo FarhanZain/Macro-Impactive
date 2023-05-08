@@ -9,6 +9,9 @@ import LandingPageLogin from "./views/landingPageLogin";
 import AksiTanggapLogin from "./views/aksiTanggapLogin";
 import AksiTanggapDetailLogin from "./views/aksiTanggapDetailLogin";
 import DasboardSeleksiRelawan from "./views/dashboardSeleksiRelawan";
+import Contoh from "./views/contoh";
+import AksiTanggapDetailTerdaftar from "./views/aksiTanggapDetailTerdaftar";
+import RegisterRelawan from "./views/registerRelawan";
 
 function App() {
   return (
@@ -32,11 +35,17 @@ function App() {
           path="/Aksi-Tanggap-Detail-Login"
           element={<AksiTanggapDetailLogin />}
         ></Route>
+        <Route
+          path="/Aksi-Tanggap-Detail-Terdaftar"
+          element={<AksiTanggapDetailTerdaftar />}
+        ></Route>
         <Route path="/Dashboard" element={<DasboardPage />}></Route>
         <Route
           path="/Dashboard-Seleksi-Relawan"
           element={<DasboardSeleksiRelawan />}
         ></Route>
+        <Route path="/contoh" element={<Contoh />}></Route>
+        <Route path="/Registrasi-Relawan" element={<RegisterRelawan />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </Router>

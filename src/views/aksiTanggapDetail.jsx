@@ -11,6 +11,7 @@ import ButtonSecondary from "../components/buttonSecondary";
 import ButtonPrimary from "../components/buttonPrimary";
 import { Link } from "react-router-dom";
 import CardDoa from "../components/cardDoa";
+import ModalLogin from "../components/modalLogin";
 
 export default function AksiTanggapDetail() {
   return (
@@ -156,7 +157,7 @@ export default function AksiTanggapDetail() {
                     <path
                       fill-rule="evenodd"
                       d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                     ></path>
                   </svg>
                 </button>
@@ -423,6 +424,8 @@ export default function AksiTanggapDetail() {
               <div className="py-2">
                 <Link to={""}>
                   <button
+                    data-modal-target="modalLogin"
+                    data-modal-toggle="modalLogin"
                     type="button"
                     className="text-white w-full justify-center flex items-center gap-3 bg-secondary hover:bg-secondary-hover font-semibold font-poppins rounded-lg text-lg px-5 py-3 "
                   >
@@ -437,12 +440,15 @@ export default function AksiTanggapDetail() {
                     </svg>
                     Jadi Relawan
                   </button>
+                  <ModalLogin />
                 </Link>
               </div>
               {/* button donasi */}
               <div className="py-2">
                 <Link to={""}>
                   <button
+                    data-modal-target="modalLogin"
+                    data-modal-toggle="modalLogin"
                     type="button"
                     className="text-white w-full justify-center flex items-center gap-3 bg-primary hover:bg-primary-hover font-semibold font-poppins rounded-lg text-lg px-5 py-3 "
                   >
@@ -457,6 +463,7 @@ export default function AksiTanggapDetail() {
                     </svg>
                     Donasi
                   </button>
+                  <ModalLogin />
                 </Link>
               </div>
               <div className="flex justify-between py-2">

@@ -26,7 +26,7 @@ export default function CardArtikelLandingPage(props) {
               width="16"
               height="16"
               fill="currentColor"
-              class="bi bi-clock text-gray-400"
+              className="bi bi-clock text-gray-400"
               viewBox="0 0 16 16"
             >
               {" "}

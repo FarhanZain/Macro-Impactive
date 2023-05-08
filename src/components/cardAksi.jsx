@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ModalLogin from "./modalLogin";
 
 export default function CardAksi(props) {
   return (
@@ -28,7 +29,7 @@ export default function CardAksi(props) {
         {/* content */}
         <div className="px-2">
           <Link to={props.link}>
-            <a href="#">
+            <a>
               <h5 className="mb-2 text-2xl font-bold font-Libre tracking-tight text-black">
                 {props.judulCard}
               </h5>
@@ -44,7 +45,7 @@ export default function CardAksi(props) {
             <div className="bg-orange-100 mr-3 p-1 rounded">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-calendar-time text-secondary"
+                className="icon icon-tabler icon-tabler-calendar-time text-secondary"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -71,7 +72,7 @@ export default function CardAksi(props) {
                 width="24"
                 height="24"
                 fill="currentColor"
-                class="bi bi-geo-alt-fill text-secondary"
+                className="bi bi-geo-alt-fill text-secondary"
                 viewBox="0 0 16 16"
               >
                 {" "}

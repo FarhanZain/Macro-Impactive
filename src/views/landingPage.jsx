@@ -15,6 +15,7 @@ import CardArtikelLandingPage from "../components/cardArtikelLandingPage";
 import Artikel1 from "../img/Artikel1.png";
 import Artikel2 from "../img/Artikel2.png";
 import Footer from "../components/footer";
+import { Link } from "react-router-dom";
 
 export default function LandingPage() {
   return (
@@ -94,12 +95,11 @@ export default function LandingPage() {
                 alam.
               </p>
               <div class="flex justify-center">
-                <a
-                  href="#"
-                  class="inline-flex items-center px-6 py-3 text-lg font-semibold font-poppins text-center text-white bg-secondary rounded-lg hover:bg-secondary-hover"
-                >
-                  Jadi Relawan
-                </a>
+                <Link to="/AksiTanggap">
+                  <a class="inline-flex items-center px-6 py-3 text-lg font-semibold font-poppins text-center text-white bg-secondary rounded-lg hover:bg-secondary-hover">
+                    Jadi Relawan
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -212,10 +212,7 @@ export default function LandingPage() {
         </div>
         <div className="flex justify-center py-24">
           <div className="px-8">
-            <ButtonSecondary
-              TextButton={"Gabung Sebagai Relawan"}
-              link={"/AksiTanggap"}
-            />
+            <ButtonSecondary TextButton={"Gabung Sebagai Relawan"} link={""} />
           </div>
           <div className="px-8">
             <ButtonPrimary TextButton="Gabung Sebagai Organisasi" />

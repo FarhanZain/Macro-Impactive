@@ -46,7 +46,7 @@ export default function DasboardSeleksiRelawan() {
                 </div>
                 <div className="h-[250px] flex items-center">
                   <div className="flex">
-                    <Link>
+                    <Link to="/Aksi-Tanggap-Detail-Terdaftar">
                       <div className="pl-4 w-full h-full flex items-center border-r-2 border-gray-500 cursor-pointer">
                         <div className="w-full mr-3">
                           <img src={imgAksi} alt="" />

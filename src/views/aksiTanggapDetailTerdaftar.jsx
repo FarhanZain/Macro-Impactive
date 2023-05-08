@@ -11,11 +11,11 @@ import ButtonSecondary from "../components/buttonSecondary";
 import ButtonPrimary from "../components/buttonPrimary";
 import { Link } from "react-router-dom";
 import CardDoa from "../components/cardDoa";
+import ModalLogin from "../components/modalLogin";
 import NavbarLogin from "../components/NavbarLogin";
-import ModalRelawan from "../components/modalRelawan";
 import ModalDonasi from "../components/modalDonasi";
 
-export default function AksiTanggapDetailLogin() {
+export default function AksiTanggapDetailTerdaftar() {
   return (
     <>
       <NavbarLogin />
@@ -426,10 +426,8 @@ export default function AksiTanggapDetailLogin() {
               <div className="py-2">
                 <Link to={""}>
                   <button
-                    data-modal-target="modalRelawan"
-                    data-modal-toggle="modalRelawan"
                     type="button"
-                    className="text-white w-full justify-center flex items-center gap-3 bg-secondary hover:bg-secondary-hover font-semibold font-poppins rounded-lg text-lg px-5 py-3 "
+                    className="text-gray-500 w-full justify-center flex items-center gap-3 bg-gray-200 font-semibold font-poppins rounded-lg text-lg px-5 py-3 cursor-not-allowed"
                   >
                     <svg
                       aria-hidden="true"
@@ -440,9 +438,8 @@ export default function AksiTanggapDetailLogin() {
                     >
                       <path d="M20 22H4V20C4 17.2386 6.23858 15 9 15H15C17.7614 15 20 17.2386 20 20V22ZM12 13C8.68629 13 6 10.3137 6 7C6 3.68629 8.68629 1 12 1C15.3137 1 18 3.68629 18 7C18 10.3137 15.3137 13 12 13Z"></path>
                     </svg>
-                    Jadi Relawan
+                    Anda Sudah Mendaftar
                   </button>
-                  <ModalRelawan />
                 </Link>
               </div>
               {/* button donasi */}
